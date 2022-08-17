@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h3><a href="ders1.html" >  ders1</a></h3> 
+   <h3><a href="ders2.html" >  ders2</a></h3> 
+   <h3><a href="ders3.html" >  ders3</a></h3> 
+   <h3><a href="ders4.html" >  ders1</a></h3> 
+
+   <br><br>
+    <canvas id="canvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+
+
+    <script>
+        var c=document.getElementById("canvas");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(135,30);
+
+               
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(150,50,25,0,Math.PI*2);
+        ctx.stroke();
+        ctx.font="20px Arial";
+        ctx.fillText("E",145,55);
+
+
+
+    </script>
+    
+</body>
+</html>
